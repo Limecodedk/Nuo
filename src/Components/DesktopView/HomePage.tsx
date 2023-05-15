@@ -20,19 +20,32 @@ const HomePage = () => {
           <div className={styles.topnavIcon}>
             {myData.topNav.map((Data, index) => (
               <Link href={Data.Path} key={index}>
-                <img src={Data.src} alt={Data.alt} />
+                <Image
+                  src={Data.src}
+                  alt={Data.alt}
+                  height={80}
+                  width={80} />
               </Link>
             ))}
           </div>
           <div className={styles.logo}>
-            <a href="/">
-              <img src={myData.logo.src} alt="" />
-            </a>
+            <Link href="/">
+              <Image
+                src={myData.logo.src}
+                alt={Data.logo.alt}
+                height={750}
+                width={300}
+              />
+            </Link>
           </div>
           <div className={styles.frontImage}>
             {myData.frontImg.map((Data, index) => (
               <Link href={Data.Path} key={index}>
-                <img src={Data.src} alt={Data.alt} />
+                <Image
+                  src={Data.src}
+                  alt={Data.alt}
+                  height={750}
+                  width={300} />
               </Link>
             ))}
           </div>

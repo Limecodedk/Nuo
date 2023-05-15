@@ -3,7 +3,7 @@ import useResponsiveLayout from '../Hooks/useResponsiveLayout'
 import MobileHome from '../Components/MobileView/getintouchM';
 import DesktopHome from '../Components/DesktopView/getintouch'
 
-const whatwedo = () => {
+const Getintouch = () => {
   const isMobile = useResponsiveLayout();
 
   return (
@@ -20,4 +20,4 @@ const whatwedo = () => {
     </>
   );
 }
-export default whatwedo;
+export default Getintouch;

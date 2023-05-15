@@ -1,7 +1,9 @@
+import Image from 'next/image';
 import style from '../../styles/DesktoView/whatwedo.module.scss'
 import Data from '../../../public/assets/json/data.json'
 import Link from 'next/link';
 import { useRouter } from "next/router";
+import { date } from 'yup';
 
 interface myData {
   src: string;
@@ -20,13 +22,22 @@ const WhatWeDo = () => {
         <div className={style.container}>
           <div className={style.navContainer}>
             <div className={style.back} onClick={() => router.back()}>
-              <img src={Data.navigationBack.backBtn} alt="" />
+              <Image
+                src={Data.navigationBack.backBtn}
+                alt={Data.navigationBack.alt}
+                width={60}
+                height={80}
+              />
             </div>
             <div className={style.topnav}>
               <div className={style.topnavIcon}>
                 {myData.topNav.map((Data, index) => (
                   <Link href={Data.Path} key={index}>
-                    <img src={Data.src} alt={Data.alt} />
+                    <Image
+                      src={Data.src}
+                      alt={Data.alt}
+                      width={80}
+                      height={80} />
                   </Link>
                 ))}
               </div>
@@ -34,7 +45,11 @@ const WhatWeDo = () => {
           </div>
           <div className={style.contentContainer}>
             <div className={style.img}>
-              <img src={Data.whatwedo.img} alt="" />
+              <Image
+                src={Data.whatwedo.img}
+                alt={Data.whatwedo.alt}
+                height={750}
+                width={290} />
             </div>
             <div className={style.content}>
               <h2>{Data.whatwedo.header} <span className={style.heading}>{Data.whatwedo.heading}</span>{Data.whatwedo.dot}</h2>
@@ -43,7 +58,7 @@ const WhatWeDo = () => {
               <p>{Data.whatwedo.text3}</p>
 
               <div className={style.btnContainer}>
-                <a className={style.btn} href="/">{Data.whatwedo.btn}</a>
+                <Link className={style.btn} href="/">{Data.whatwedo.btn}</Link>
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@ import useResponsiveLayout from '../Hooks/useResponsiveLayout'
 import MobileHome from '../Components/MobileView/maintainableM';
 import DesktopHome from '../Components/DesktopView/maintainable'
 
-const whatwedo = () => {
+const Maintainable = () => {
   const isMobile = useResponsiveLayout();
   return (
     <>
@@ -19,4 +19,4 @@ const whatwedo = () => {
     </>
   );
 }
-export default whatwedo;
+export default Maintainable;

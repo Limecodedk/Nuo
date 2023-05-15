@@ -4,9 +4,12 @@
 
 .container {
   display: flex;
+
 }
 
 .containerContent {
+
+  place-items: center;
   grid-template-columns: 1fr;
   height: 100vh;
   text-align: center;
@@ -17,6 +20,7 @@
 }
 
 .content {
+
   line-break: normal;
 }
 

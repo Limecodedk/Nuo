@@ -7,13 +7,11 @@ import { useForm } from 'react-hook-form';
 import { useEffect, useState } from "react";
 
 interface mProps {
-
-  isOpen: boolean
-  onClose: () => void
+  isOpen: boolean;
+  onClose: () => void;
 }
 
 const Modal = (props: mProps) => {
-
   const schema = yup.object().shape({
     name: yup
       .string()
@@ -29,25 +27,31 @@ const Modal = (props: mProps) => {
     comment: yup
       .string()
       .required('Please enter your message')
-  })
+  });
 
-  const { register,
-    handleSubmit,
-    formState: { errors } } = useForm({ resolver: yupResolver(schema), });
+  const { register, handleSubmit, formState: { errors } } = useForm({ resolver: yupResolver(schema) });
 
-  const onSubmit = (data: any) => console.log(data);
+  const onSubmit = (data: any) => {
+    console.log(data);
+    return undefined;
+  };
 
   if (!props.isOpen) return null;
 
-  return ReactDOM.createPortal(
-
+  return props.isOpen ? (
     <div className={modalStyle.modal} id="modal">
       <div className={modalStyle.close} onClick={props.onClose}><GrClose /></div>
       <h2>Get in Touch and Let Us Help You!</h2>
       <div className={modalStyle.error}>
-        {errors.name?.message} <br />
-        {errors.email?.message} <br />
-        {errors.comment?.message}
+        {errors && errors.name && (
+          <>{errors.name.message} <br /></>
+        )}
+        {errors && errors.email && (
+          <>{errors.email.message} <br /></>
+        )}
+        {errors && errors.comment && (
+          <>{errors.comment.message} <br /></>
+        )}
       </div>
       <div className={modalStyle.container}>
         <form onSubmit={handleSubmit(onSubmit)} className={modalStyle.form}>
@@ -63,7 +67,8 @@ const Modal = (props: mProps) => {
           </div>
         </form>
       </div>
-    </div>, document.body
-  )
-}
+    </div>
+  ) : null;
+};
+
 export default Modal;

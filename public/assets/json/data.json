@@ -31,7 +31,8 @@
     }
   ],
   "navigationBack": {
-    "backBtn": "/assets/images/back.png"
+    "backBtn": "/assets/images/back.png",
+    "alt": "Back button"
   },
   "frontImg": [
     {
@@ -73,6 +74,7 @@
   ],
   "whatwedo": {
     "img": "/assets/images/front-what-we-do-link.png",
+    "alt": "What We Do",
     "header": "Design is the",
     "heading": "matter of choise",
     "dot": "...",
@@ -83,6 +85,7 @@
   },
   "maintainable": {
     "img": "/assets/images/front-maintainable-link.png",
+    "alt": "MaintainAble",
     "header": "Keeping your all",
     "heading": " upto date",
     "dot": "...",
@@ -93,6 +96,7 @@
   },
   "getintouch": {
     "img": "/assets/images/front-getintouch-link.png",
+    "alt": "Get In Touch",
     "header": "There for you and",
     "heading": "care for you",
     "dot": "...",
@@ -101,6 +105,7 @@
     "contactIcon": "/assets/images/whatwedo-small.png",
     "contactIcon2": "/assets/images/maintainable-small.png",
     "contactIcon3": "/assets/images/getintouch-small.png",
+    "contactIconAlt": "Get In Touch Contact us",
     "btn": "GetInTouch"
   },
   "notfound": {
