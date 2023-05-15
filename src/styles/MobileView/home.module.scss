@@ -1,0 +1,35 @@
+.main {
+  background: linear-gradient(0deg, rgba(176, 210, 231, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 500px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.logo img {
+  height: 60px;
+  object-fit: cover;
+}
+
+.image img {
+  width: 480px;
+  margin: 0 10px
+}
+
+.btn {
+  text-align: right;
+  margin: 0 10px;
+}
+
+.button {
+  display: inline-block;
+  background-color: black;
+  padding: 5px 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,99 @@
+.main {
+  background-color: #FFB472;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1054px;
+  margin: 0 auto;
+
+}
+
+.navContainer {
+  display: flex;
+}
+
+.contentContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.back {
+  margin-top: 14px;
+  margin-left: -60px;
+  cursor: pointer;
+
+  img {
+    height: 60px;
+  }
+}
+
+.topnav {
+  grid-column: 2/3;
+  margin: 20px 0;
+}
+
+.topnavIcon img {
+  height: 50px;
+  padding: 0 10px;
+}
+
+.img {
+  display: flex;
+
+  img {
+    height: 650px;
+    border-radius: 15px;
+  }
+}
+
+.content {
+  font-family: Arial;
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    color: #fff;
+    padding: 10px 0;
+  }
+}
+
+.heading {
+  color: #BF7B3F;
+}
+
+.contact {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+  }
+}
+
+.contactIcon {
+  text-align: center;
+}
+
+.btnContainer {
+  display: block;
+  text-align: right;
+  margin-top: 165px;
+}
+
+.btn {
+  display: inline-block;
+  text-align: right;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: bold
+}

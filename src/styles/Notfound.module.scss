@@ -1,0 +1,30 @@
+.main {
+  background: linear-gradient(0deg, rgba(176, 210, 231, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.container {
+  display: flex;
+}
+
+.containerContent {
+  grid-template-columns: 1fr;
+  height: 100vh;
+  text-align: center;
+}
+
+.heading {
+  font-size: 5rem;
+}
+
+.content {
+  line-break: normal;
+}
+
+.btn {
+  display: inline-block;
+  background-color: black;
+  padding: 5px 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+}

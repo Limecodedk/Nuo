@@ -1,0 +1,112 @@
+{
+  "logo": {
+    "src": "/assets/images/logo-final.png",
+    "alt": "Nue logo"
+  },
+  "logoMobile": [
+    {
+      "src": "/assets/images/logo-a.png",
+      "alt": "Nue logo"
+    },
+    {
+      "src": "/assets/images/logo-b.png",
+      "alt": "Nue logo"
+    }
+  ],
+  "topNav": [
+    {
+      "src": "/assets/images/nav-1.svg",
+      "alt": "Nav icon 1",
+      "Path": "/whatwedo"
+    },
+    {
+      "src": "/assets/images/nav-2.svg",
+      "alt": "Nav icon 2",
+      "Path": "/maintainable"
+    },
+    {
+      "src": "/assets/images/nav-3.svg",
+      "alt": "Nav icon 3",
+      "Path": "/getintouch"
+    }
+  ],
+  "navigationBack": {
+    "backBtn": "/assets/images/back.png"
+  },
+  "frontImg": [
+    {
+      "src": "/assets/images/front-what-we-do.png",
+      "alt": "billede 1",
+      "Path": "/whatwedo"
+    },
+    {
+      "src": "/assets/images/front-maintainable.png",
+      "alt": "billede 2",
+      "Path": "/maintainable"
+    },
+    {
+      "src": "/assets/images/front-get-in-touch.png",
+      "alt": "billede 3",
+      "Path": "/getintouch"
+    }
+  ],
+  "button": {
+    "text": "And yet... more to come",
+    "url": "/404"
+  },
+  "frontMobile": [
+    {
+      "src": "/assets/images/weba-2-mobil-whatwedo.png",
+      "alt": "billede 1",
+      "Path": "/whatwedo"
+    },
+    {
+      "src": "/assets/images/weba-3-mobil-maintainable.png",
+      "alt": "billede 2",
+      "Path": "/maintainable"
+    },
+    {
+      "src": "/assets/images/weba-mobil.getintouch.png",
+      "alt": "billede 3",
+      "Path": "/getintouch"
+    }
+  ],
+  "whatwedo": {
+    "img": "/assets/images/front-what-we-do-link.png",
+    "header": "Design is the",
+    "heading": "matter of choise",
+    "dot": "...",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat, diam ut laoreet egestas, ligula metus tristique mi, vel egestas erat nunc ut dolor. Mauris id sodales tortor, ut euismod dolor. Donec in arcu vitae sem pretium auctor varius ut arcu. Suspendisse tempus, risus non scelerisque fermentum, quam ante fringilla elit, sit amet lobortis enim nisi at orci. Nunc vitae aliquet magna, in laoreet augue. In quis lacinia turpis. Aliquam euismod urna vitae neque posuere, eget vulputate sapien pellentesque. Integer consectetur venenatis vulputate. In nec justo tempor, pellentesque neque ac, malesuada leo. Maecenas ac mauris id est tincidunt venenatis elementum vitae enim. Aenean id faucibus mi. Quisque dapibus elit quis dignissim pretium. Praesent consequat libero varius condimentum congue.",
+    "text2": "Proin sit amet sagittis elit, at cursus lectus. Etiam aliquet lacus eget sapien rhoncus euismod. In rhoncus urna eu fringilla consequat. Vivamus maximus lacus eget neque sollicitudin, in sollicitudin purus ornare. Nunc maximus euismod risus, at hendrerit augue convallis venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque ac eros dolor. Proin porttitor urna vel mollis lobortis. In nec justo tempor, pellentesque neque ac, malesuada leo. Maecenas ac mauris id est tincidunt venenatis elementum vitae enim. Aenean id faucibus mi. Quisque dapibus elit quis dignissim pretium. Praesent consequat libero varius condimentum congue. Donec sit amet ultrices nisi, eget egestas orci. Pellentesque lobortis libero eros, ut consequat elit dignissim sed.",
+    "text3": "Nunc id gravida mauris. Etiam tincidunt, ante ac ultrices gravida, sapien neque venenatis metus, et facilisis tellus nunc blandit turpis.",
+    "btn": "WhatWeDo"
+  },
+  "maintainable": {
+    "img": "/assets/images/front-maintainable-link.png",
+    "header": "Keeping your all",
+    "heading": " upto date",
+    "dot": "...",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat",
+    "text2": "Proin sit amet sagittis elit, at cursus lectus. Etiam aliquet lacus eget sapien rhoncus euismod. In rhoncus urna eu fringilla consequat. Vivamus maximus lacus eget neque sollicitudin, in sollicitudin purus ornare. Nunc maximus euismod risus, at hendrerit augue convallis venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque ac eros dolor. ",
+    "text3": "Nunc id gravida mauris. Etiam tincidunt, ante ac ultrices gravida, sapien neque venenatis metus, et facilisis tellus nunc blandit turpis. consequat libero varius condimentum congue. Donec sit amet ultrices nisi, eget egestas orci. Pellentesque lobortis libero eros, ut consequat elit dignissim sed.",
+    "btn": "MaintainAble"
+  },
+  "getintouch": {
+    "img": "/assets/images/front-getintouch-link.png",
+    "header": "There for you and",
+    "heading": "care for you",
+    "dot": "...",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat Proin sit amet sagittis elit, at cursus lectus. Etiam aliquet lacus eget sapien rhoncus euismod. In rhoncus urna eu fringilla consequat. Vivamus maximus lacus eget neque sollicitudin, in sollicitudin purus ornare. Nunc maximus euismod risus. Nunc id gravida mauris. Etiam tincidunt, ante ac ultrices gravida, sapien neque venenatis metus, et facilisis tellus nunc blandit turpis. consequat libero varius condimentum congue. Donec sit amet ultrices nisi, eget egestas orci. Pellentesque lobortis libero eros, ut consequat elit dignissim sed.",
+    "text2": "Proin sit amet sagittis elit, at cursus lectus. Etiam aliquet lacus eget sapien rhoncus euismod. In rhoncus urna eu fringilla consequat. Vivamus maximus lacus eget neque sollicitudin, in sollicitudin purus ornare. Nunc maximus euismod risus, at hendrerit augue convallis venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque ac eros dolor. ",
+    "contactIcon": "/assets/images/whatwedo-small.png",
+    "contactIcon2": "/assets/images/maintainable-small.png",
+    "contactIcon3": "/assets/images/getintouch-small.png",
+    "btn": "GetInTouch"
+  },
+  "notfound": {
+    "pagetitle": "404",
+    "content": "Oops we can not found the page",
+    "btn": "Go Home",
+    "src": "/"
+  }
+}
