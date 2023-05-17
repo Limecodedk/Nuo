@@ -29,7 +29,9 @@ const Modal = (props: mProps) => {
       .required('Please enter your message')
   });
 
-  const { register, handleSubmit, formState: { errors } } = useForm({ resolver: yupResolver(schema) });
+  const { register, handleSubmit, formState: { errors } } = useForm({
+    resolver: yupResolver(schema)
+  });
 
   const onSubmit = (data: any) => {
     console.log(data);
@@ -57,13 +59,18 @@ const Modal = (props: mProps) => {
         <form onSubmit={handleSubmit(onSubmit)} className={modalStyle.form}>
           <label>Name*</label>
           <input
-            type="text" id="name" {...register("name", { required: true, minLength: 2, maxLength: 10, pattern: /^[A-Za-z]+$/i })} />
+            type="text" id="name"
+            {...register("name", { required: true, minLength: 2, maxLength: 10, pattern: /^[A-Za-z]+$/i })} />
           <label>Email*</label>
-          <input type="email" id="email" {...register("email")} />
+          <input type="email" id="email"
+            {...register("email")} />
           <label >Comment*</label>
-          <textarea id="comment" {...register("comment")}></textarea>
+          <textarea id="comment"
+            {...register("comment")}></textarea>
           <div>
-            <button className={modalStyle.btn}>Submit</button>
+            <button className={modalStyle.btn}>
+              Submit
+            </button>
           </div>
         </form>
       </div>

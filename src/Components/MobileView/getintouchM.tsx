@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import mStyle from '../../styles/MobileView/getintouch.module.scss'
 import Data from '../../../public/assets/json/data.json'
 import Link from 'next/link';
@@ -30,33 +29,19 @@ const GetInTouchM = () => {
       <section className={mStyle.main}>
         <nav className={mStyle.topnav}>
           <div className={mStyle.backbtn} onClick={() => router.back()}>
-            <Image
-              src={Data.navigationBack.backBtn}
-              alt={Data.navigationBack.alt}
-              width={60}
-              height={90}
-            />
+            <img src={Data.navigationBack.backBtn} alt={Data.navigationBack.alt} />
           </div>
           <div>
             <div className={mStyle.topnavIcon}>
               {myData.topNav.map((Data, index) => (
                 <Link href={Data.Path} key={index}>
-                  <Image
-                    src={Data.src}
-                    alt={Data.alt}
-                    width={40}
-                    height={90} />
+                  <img src={Data.src} alt={Data.alt} />
                 </Link>
               ))}
             </div>
           </div>
         </nav>
-        <Image className={mStyle.topimg}
-          src={Data.frontMobile[2].src}
-          alt={Data.frontMobile[2].alt}
-          height={250}
-          width={500}
-        />
+        <img className={mStyle.topimg} src={Data.frontMobile[2].src} alt={Data.frontMobile[2].alt} />
         <h2>{Data.getintouch.header} <span className={mStyle.heading}>{Data.getintouch.heading}</span>{Data.getintouch.dot}</h2>
         <div className={mStyle.content}>
           <p>{Data.getintouch.text}</p>
@@ -64,44 +49,35 @@ const GetInTouchM = () => {
         </div>
         <div className={mStyle.contactIcon}>
           <div onClick={openModal}>
-            <Image
+            <img
               src={Data.getintouch.contactIcon}
               alt={Data.getintouch.alt}
-              height={150}
-              width={150} />
+            />
             <div>
-              <Link href="#">lt@ooolish.com</Link>
+              <a href="#">lt@ooolish.com</a>
             </div>
           </div>
           <div onClick={openModal}>
-            <Image
+            <img
               src={Data.getintouch.contactIcon2}
               alt={Data.getintouch.contactIconAlt}
-              height={150}
-              width={150}
             />
             <div>
-              <Link href="#">pn@ooolish.com</Link>
+              <a href="#">pn@ooolish.com</a>
             </div>
           </div>
           <div onClick={openModal}>
-            <Image
+            <img
               src={Data.getintouch.contactIcon3}
               alt={Data.getintouch.contactIconAlt}
-              height={150}
-              width={150}
             />
             <div>
-              <Link href="#">mn@ooolish.com</Link>
+              <a href="#">mn@ooolish.com</a>
             </div>
           </div>
         </div>
         <div className={mStyle.buttonlogo}>
-          <Image
-            src={Data.logoMobile[1].src}
-            alt={Data.logo.alt}
-            width={100}
-            height={60} />
+          <img src={Data.logoMobile[1].src} alt={Data.logo.alt} />
         </div>
         <Modal
           isOpen={open}

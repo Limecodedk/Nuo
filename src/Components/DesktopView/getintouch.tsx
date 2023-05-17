@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import style from '../../styles/DesktoView/getintouch.module.scss';
 import Data from '../../../public/assets/json/data.json';
@@ -39,21 +38,19 @@ const GetInTouch = () => {
         <div className={style.container}>
           <div className={style.navContainer}>
             <div className={style.back} onClick={() => router.back()}>
-              <Image
+              <img
                 src={Data.navigationBack.backBtn}
                 alt={Data.navigationBack.alt}
-                width={60}
-                height={80} />
+              />
             </div>
             <div className={style.topnav}>
               <div className={style.topnavIcon}>
                 {myData.topNav.map((data, indeks) => (
                   <Link href={data.Path} key={indeks}>
-                    <Image
+                    <img
                       src={data.src}
                       alt={data.alt}
-                      width={80}
-                      height={80} />
+                    />
                   </Link>
                 ))}
               </div>
@@ -61,11 +58,10 @@ const GetInTouch = () => {
           </div>
           <div className={style.contentContainer}>
             <div className={style.img}>
-              <Image
+              <img
                 src={Data.getintouch.img}
                 alt={Data.getintouch.alt}
-                height={750}
-                width={290} />
+              />
             </div>
             <div className={style.content}>
               <h2>
@@ -78,41 +74,38 @@ const GetInTouch = () => {
 
               <div className={style.contact}>
                 <div className={style.contactIcon} onClick={openModal}>
-                  <Image
+                  <img
                     src={Data.getintouch.contactIcon}
                     alt={Data.getintouch.contactIconAlt}
-                    width={150}
-                    height={150}
                   />
                   <div>
-                    <Link href="#">lt@ooolish.com</Link>
+                    <a href="#">lt@ooolish.com </a>
                   </div>
                 </div>
                 <div onClick={openModal}>
-                  <Image
+                  <img
                     src={Data.getintouch.contactIcon2}
                     alt={Data.getintouch.contactIconAlt}
-                    width={150}
-                    height={150}
                   />
                   <div>
-                    <Link href="#">pn@ooolish.com</Link>
+                    <a href="#">pn@ooolish.com</a>
                   </div>
                 </div>
                 <div onClick={openModal}>
-                  <Image
+                  <img
                     src={Data.getintouch.contactIcon3}
                     alt={Data.getintouch.contactIconAlt}
-                    width={150}
-                    height={150}
                   />
                   <div>
-                    <Link href="#">mn@ooolish.com</Link>
+                    <a href="#">mn@ooolish.com</a>
                   </div>
                 </div>
               </div>
               <div className={style.btnContainer}>
-                <Link className={style.btn} href="/">{Data.getintouch.btn}</Link>
+                <Link
+                  className={style.btn}
+                  href="/">{Data.getintouch.btn}
+                </Link>
               </div>
             </div>
           </div>

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from '../../styles/DesktoView/Home.module.scss';
 import Data from '../../../public/assets/json/data.json'
 import Link from 'next/link';
@@ -20,37 +19,27 @@ const HomePage = () => {
           <div className={styles.topnavIcon}>
             {myData.topNav.map((Data, index) => (
               <Link href={Data.Path} key={index}>
-                <Image
-                  src={Data.src}
-                  alt={Data.alt}
-                  height={80}
-                  width={80} />
+                <img src={Data.src} alt={Data.alt} />
               </Link>
             ))}
           </div>
           <div className={styles.logo}>
-            <Link href="/">
-              <Image
-                src={myData.logo.src}
-                alt={Data.logo.alt}
-                height={750}
-                width={300}
-              />
-            </Link>
+            <a href="/">
+              <img src={myData.logo.src} alt={Data.logo.alt} />
+            </a>
           </div>
           <div className={styles.frontImage}>
             {myData.frontImg.map((Data, index) => (
               <Link href={Data.Path} key={index}>
-                <Image
-                  src={Data.src}
-                  alt={Data.alt}
-                  height={750}
-                  width={300} />
+                <img src={Data.src} alt={Data.alt} />
               </Link>
             ))}
           </div>
           <div className={styles.btn}>
-            <a className={styles.button} href={myData.button.url}>{myData.button.text}</a>
+            <a className={styles.button}
+              href={myData.button.url}>
+              {myData.button.text}
+            </a>
           </div>
         </div>
       </section>
